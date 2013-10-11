@@ -40,14 +40,7 @@ import com.example.lyrics.model.SearchResultsRow;
 public class ArtistTabActivity extends FragmentActivity implements
 		ActionBar.TabListener {
 
-	/**
-	 * The {@link android.support.v4.view.PagerAdapter} that will provide
-	 * fragments for each of the sections. We use a
-	 * {@link android.support.v4.app.FragmentPagerAdapter} derivative, which
-	 * will keep every loaded fragment in memory. If this becomes too memory
-	 * intensive, it may be best to switch to a
-	 * {@link android.support.v4.app.FragmentStatePagerAdapter}.
-	 */
+
 	SectionsPagerAdapter mSectionsPagerAdapter;
 
 	private ArrayList<SearchResultsRow> resultRows = new ArrayList<SearchResultsRow>();
@@ -56,9 +49,7 @@ public class ArtistTabActivity extends FragmentActivity implements
 	private static String artistInfoText;
 	private static TextView artistInfoTextView;
 
-	/**
-	 * The {@link ViewPager} that will host the section contents.
-	 */
+
 	ViewPager mViewPager;
 
 	@Override
@@ -141,10 +132,7 @@ public class ArtistTabActivity extends FragmentActivity implements
 			FragmentTransaction fragmentTransaction) {
 	} 
 
-	/**
-	 * A {@link FragmentPagerAdapter} that returns a fragment corresponding to
-	 * one of the sections/tabs/pages.
-	 */
+
 	public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
 		public SectionsPagerAdapter(FragmentManager fm) {
@@ -187,15 +175,9 @@ public class ArtistTabActivity extends FragmentActivity implements
 		}
 	}
 
-	/**
-	 * A dummy fragment representing a section of the app, but that simply
-	 * displays dummy text.
-	 */
+
 	public static class ArtistInfoFragment extends Fragment {
-		/** <p>
-		 * The fragment argument representing the section number for this
-		 * fragment.
-		 */
+
 		public static final String ARG_SECTION_NUMBER = "section_number";
 
 		public ArtistInfoFragment() {
